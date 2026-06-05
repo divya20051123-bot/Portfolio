@@ -324,7 +324,7 @@ export function Portfolio() {
 
                 {/* CTA */}
                 <a
-                  href="mailto:divya20051123@gmail.com"
+                  href="mailto:divya20051123@gmail.com?subject=Inquiry%20regarding%20Web%20Development%20Opportunities&body=Hello%20Divya%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0AProject%20details%3A%0A%5BInsert%20brief%20project%20description%5D%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
                   className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   style={{
                     background: scrolled ? "#ffffff" : "#760031",
@@ -376,7 +376,7 @@ export function Portfolio() {
                     </a>
                   ))}
                   <a
-                    href="mailto:divya20051123@gmail.com"
+                    href="mailto:divya20051123@gmail.com?subject=Inquiry%20regarding%20Web%20Development%20Opportunities&body=Hello%20Divya%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20opportunity.%0A%0AProject%20details%3A%0A%5BInsert%20brief%20project%20description%5D%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
                     onClick={() => setMobileMenuOpen(false)}
                     className="mt-2 w-full text-center py-2.5 rounded-full text-sm font-bold transition-all duration-300"
                     style={{

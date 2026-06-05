@@ -12,7 +12,6 @@ import {
 } from 'lucide-react';
 import {
 	FaGithub as Github,
-	FaTwitter as Twitter,
 	FaLinkedin as Linkedin,
 	FaInstagram as Instagram,
 } from 'react-icons/fa';
@@ -25,22 +24,22 @@ export function ContactPage() {
 	const socialLinks = [
 		{
 			icon: Github,
-			href: 'https://github.com/divyabharathis',
+			href: 'https://github.com/divya20051123-bot/Food-Connect.git',
 			label: 'GitHub',
 		},
 		{
-			icon: Twitter,
-			href: 'https://twitter.com',
-			label: 'Twitter',
+			icon: Mail,
+			href: 'mailto:divya20051123@gmail.com',
+			label: 'Email',
 		},
 		{
 			icon: Linkedin,
-			href: 'https://linkedin.com/in/divyabharathis',
+			href: 'https://www.linkedin.com/in/divya-bharathi-b8b903375/',
 			label: 'LinkedIn',
 		},
 		{
 			icon: Instagram,
-			href: 'https://instagram.com',
+			href: 'https://github.com/divya20051123-bot/Food-Connect.git',
 			label: 'Instagram',
 		},
 	];

@@ -48,8 +48,8 @@ export default function FeatureSection() {
         </p>
         <div className="flex flex-wrap items-center gap-3">
           <Button variant="default" className="rounded-full font-bold px-6 py-2.5 text-white bg-[#760031] hover:bg-[#9c0c46]" asChild>
-            <a href="/resume.pdf" target="_blank">
-              View Project PDF
+            <a href="https://github.com/divya20051123-bot/Food-Connect.git" target="_blank" rel="noopener noreferrer">
+              View Project
             </a>
           </Button>
           <Button variant="outline" className="rounded-full font-bold px-6 py-2.5 border border-black/10 bg-transparent text-slate-800 hover:bg-black/5" asChild>
