@@ -24,7 +24,7 @@ export function ContactPage() {
 	const socialLinks = [
 		{
 			icon: Github,
-			href: 'https://github.com/divya20051123-bot/Food-Connect.git',
+			href: 'https://github.com/divya20051123-bot/',
 			label: 'GitHub',
 		},
 		{
@@ -39,7 +39,7 @@ export function ContactPage() {
 		},
 		{
 			icon: Instagram,
-			href: 'https://github.com/divya20051123-bot/Food-Connect.git',
+			href: 'https://www.instagram.com/divya_me_2305/',
 			label: 'Instagram',
 		},
 	];
