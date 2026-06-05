@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Divya Bharathi S | Premium Interactive Portfolio 💻✨
 
-## Getting Started
+Welcome to my personal portfolio website repository! This is a state-of-the-art, high-performance web application built with **Next.js**, **Framer Motion**, and **GSAP**, showcasing my work, skills, and academic history in a highly interactive format.
 
-First, run the development server:
+🔗 **Live Portfolio:** [divya20051123-bot.github.io/Portfolio](https://github.com/divya20051123-bot/Portfolio)
 
+---
+
+## 🎨 Design System & Aesthetics
+This project features a premium, bespoke **Silver & Burgundy** visual design:
+- **Theme Background:** Clean, elegant silver-gray (`#eef1f6`) with soft blur blobs.
+- **Accent Palette:** Deep burgundy (`#760031`) for high-contrast actions and rose-pink (`#ff8ea8`) for highlights.
+- **Typography:** Sleek modern body text (`Inter`) paired with structured headings (`Outfit` / `Bebas Neue`) and custom handwritten cursive highlights (`Brittany Signature`).
+- **Glassmorphism:** Light, translucent glass card panels (`bg-white/70 backdrop-blur-xl`) with custom thin borders and shadow elevations.
+
+---
+
+## 🚀 Key Features
+
+### 1. Lerped Scroll Canvas Sequence
+The home landing section uses an HTML5 Canvas that loads a batch of pre-rendered frames. As the user scrolls, the frames are ease-interpolated (lerped) in real-time for ultra-smooth navigation transitions.
+
+### 2. Fixed-Position Parallax Split Overlay
+Upon completing the sequence (at frame 158), the hero viewport container remains completely fixed and static in the background while the **About Me** section slides up from the bottom of the screen to elegantly cover the frame.
+
+### 3. Active Section Tracking (Intersection Observer)
+Replaced traditional heavy scroll calculations with a performance-optimized, native browser `IntersectionObserver` hook. It detects when sections enter the viewport reading area off the main thread, dynamically updating the active navbar underline without scroll lag.
+
+### 4. Interactive Components
+- **Stacked Education Cards:** A 3D-skewed card stack showing educational milestones with custom hover states.
+- **Orbiting Project Showcase:** A dynamic orbiting solar system showing technologies (React, Next.js, HTML/CSS, SQL) revolving around my featured final year project, **FoodConnect**.
+- **Internship Spotlight:** An interactive highlight banner featuring my signature brand logo with a custom infinite floating animation loop.
+
+---
+
+## 🛠️ Tech Stack
+- **Framework:** Next.js (App Router, React 19)
+- **Styling:** Tailwind CSS & Custom CSS variables
+- **Animations:** Framer Motion, GSAP (GreenSock)
+- **Icons:** Lucide Icons & React Icons (FontAwesome / SimpleIcons)
+- **FAVICON:** Customized high-contrast browser tab branding (`Dark.png` / `light.png`).
+
+---
+
+## 📁 Project Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+portfolio/
+├── public/                 # Static assets (favicons, scroll sequence frames)
+├── src/
+│   ├── app/
+│   │   ├── globals.css     # Global variables and font faces
+│   │   ├── layout.tsx      # App wrapper and SEO Metadata
+│   │   └── page.tsx        # Main Entry Point
+│   ├── components/
+│   │   ├── Portfolio.tsx   # Interactive core orchestrator
+│   │   └── ui/             # Reusable UI component modules (contact-page, features-8, etc.)
+│   └── lib/
+│       └── utils.ts        # Tailwind merging utilities
+├── package.json            # Script runs and dependencies
+└── tsconfig.json           # TypeScript configuration settings
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Getting Started & Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisite
+Ensure you have **Node.js (v18+)** installed.
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/divya20051123-bot/Portfolio.git
+   cd Portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. **Build production static files:**
+   ```bash
+   npm run build
+   ```
