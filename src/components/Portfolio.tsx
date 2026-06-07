@@ -169,7 +169,7 @@ export function Portfolio() {
 
       const homeHeight = containerRef.current?.offsetHeight || (2 * window.innerHeight);
       setScrolled(window.scrollY >= homeHeight - 80);
-      
+
       // Auto-close mobile menu on scroll
       setMobileMenuOpen(false);
     };
@@ -192,7 +192,7 @@ export function Portfolio() {
   // Section highlight trigger using Intersection Observer
   useEffect(() => {
     const sections = ["home", "about", "project", "skills", "internship", "testimonial", "contact"];
-    
+
     const observerOptions = {
       root: null,
       rootMargin: "-30% 0px -50% 0px", // Trigger when section is in the middle of viewport reading area
@@ -306,7 +306,7 @@ export function Portfolio() {
                       href={`#${item.toLowerCase()}`}
                       onClick={() => setActiveSection(i)}
                       className={`text-xs font-bold tracking-wider uppercase transition-colors duration-200 ${activeSection === i
-                        ? (scrolled ? "text-[#760031]" : "text-[#ff8ea8]")
+                        ? (scrolled ? "text-[#760031]" : "text-[#760031]")
                         : (scrolled ? "text-slate-500 hover:text-slate-800" : "text-neutral-400 hover:text-white")
                         }`}
                     >
@@ -315,7 +315,7 @@ export function Portfolio() {
                         <motion.div
                           layoutId="nav-underline"
                           className="h-0.5 mt-0.5 rounded-full"
-                          style={{ background: scrolled ? "#760031" : "#ff8ea8" }}
+                          style={{ background: scrolled ? "#760031" : "#760031" }}
                         />
                       )}
                     </a>
@@ -394,9 +394,9 @@ export function Portfolio() {
 
         {/* ─── SECTION 1: HERO / SCROLL SEQUENCE ─── */}
         <div id="home" ref={containerRef} className="relative h-[200vh] w-full bg-black">
-          <div 
+          <div
             className="fixed top-0 left-0 h-screen w-full overflow-hidden select-none z-0"
-            style={{ 
+            style={{
               pointerEvents: scrolled ? "none" : "auto",
               visibility: scrolled ? "hidden" : "visible"
             }}
